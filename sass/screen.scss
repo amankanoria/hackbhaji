@@ -31,12 +31,13 @@ body{
 }
 header{
   background-color:#34D1C6;
+  margin:0px;
 
   .logo{
   display:inline-block;
   margin: 0 auto;
   margin-top:0px;
-  padding-top:0px;
+  padding:0px;
   }
 }
 .navigation{
@@ -170,6 +171,20 @@ margin-top: 10px;
 .foot2{
 	display:block;
 	@include span-columns(4);
+	list-style:none;
+	li {
+ 
+ display:inline-block;
+  
+    }
+	& li a{
+	list-style:none;
+     text-decoration: none;
+padding: 2px;
+  color: white;
+  font-weight: bold;
+ margin:0px;
+    }
 	}
 
 	.foot3{
@@ -268,4 +283,11 @@ display:block;
 	text-align:centre;
 	display:block;
 	border:1px;
+}
+
+button{
+	color:#34D1C6;
+	background-color:white;
+	width:150px;
+	height:40px;
 }
