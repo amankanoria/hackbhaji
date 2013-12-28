@@ -1,0 +1,94 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+
+
+  header, footer ,highlight,dump{ clear: both; }
+
+  // nav spans 3 columns of total 12.
+  navigation { @include span-columns(3,12); }
+dump{ @include span-columns(3,12); }
+flex-container{
+@include span-columns(4); // 4-columns wide
+@include isolate(2);}
+}
+
+
+header{
+  background-color:cyan;
+}
+.navigation{
+	list-style:none;
+	text-align: right;
+	li {
+ 
+ display:inline-block;
+  
+    }
+
+    & a{
+     text-decoration: none;
+padding: 2px;
+  color: white;
+  font-weight: bold;
+ margin:0px;
+    }
+  
+   & a:hover{
+    color:yellow;
+  }
+}
+
+//highlight{@include span-columns(3,12);}
+.highlight{
+background-color:darken(white,3%);
+  height:250px;
+}
+
+/*
+.crousal{
+background-color:red;
+height:250px;
+width:300px;
+display:block;	
+margin-left: auto;
+    margin-right: auto;
+
+}
+*/
+h1{
+color:#7E7774;
+ text-align: center;
+  font-size: 2.5em;
+}
+
+h2{
+color:cyan;
+ text-align: center;
+  font-size: 1em;
+}
+
+
+.dump {
+ background-color: tomato;
+  }
+
+.flex-item {
+  background: yellow;
+  @include span-columns(3,3);
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 260px;
+  list-style:none;
+}
+

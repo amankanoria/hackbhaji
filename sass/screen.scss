@@ -1,0 +1,271 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+background:#fff;
+
+  header, footer ,highlight,dump{ clear: both; }
+
+  // nav spans 3 columns of total 12.
+  navigation { @include span-columns(3,12); }
+dump{ @include span-columns(3,12); }
+flex-container{
+@include span-columns(4); // 4-columns wide
+@include isolate(3);}
+flex-container1{
+@include span-columns(4); // 4-columns wide
+@include isolate(2);}
+footer{@include span-columns(3,12); }
+
+}
+
+body{
+	background:#fff;
+}
+header{
+  background-color:#34D1C6;
+
+  .logo{
+  display:inline-block;
+  margin: 0 auto;
+  margin-top:0px;
+  padding-top:0px;
+  }
+}
+.navigation{
+	list-style:none;
+	text-align: right;
+	padding:0 0 0 0 ;
+	li {
+ 
+ display:inline-block;
+  
+    }
+
+    & a{
+     text-decoration: none;
+padding: 2px;
+  color: white;
+  font-weight: bold;
+ margin:0px;
+    }
+  
+   & a:hover{
+    color:yellow;
+  }
+}
+
+//highlight{@include span-columns(3,12);}
+.highlight1{
+background-color:darken(white,5%);
+height:100px;
+}
+
+
+h1{
+color:#7E7774;
+ text-align: center;
+  font-size: 2.5em;
+}
+
+h2{
+color:cyan;
+ text-align: center;
+  font-size: 1em;
+}
+
+
+
+.flex-item {
+position: relative;
+ 
+  background: yellow;
+  @include span-columns(2,6);
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 260px;
+  list-style:none;
+  margin-left: auto;
+    margin-right: auto;
+    margin:2px;
+
+    img{
+	opacity:1;
+}
+    &:hover {
+    background: cyan;
+    }
+    img:hover{
+    opacity:0.8;
+    }
+}
+
+.view{
+display:block;
+	text-align:centre;
+    margin: 0 auto;
+    
+}
+
+h3{
+color:cyan;
+ text-align: center;
+  font-size: 1.5em;
+}
+h4{
+	color:white;
+ text-align: left;
+  font-size: 1.5em;
+}
+
+p{
+color:white;
+ text-align: left;
+  font-size: 1.0em;
+	
+
+}
+h4{
+	color:white;
+ text-align: centre;
+  font-size: 1.5em;
+}
+
+.flex-item1 {
+position: relative;
+  background: yellow;
+  @include span-columns(3,12);
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 260px;
+  list-style:none;
+  margin-left: auto;
+    margin-right: auto;
+    padding:1px;
+    margin:2px;
+}
+
+.foot{
+background-color:cyan;
+height:350px;
+@include span-columns(12);
+margin-top: 10px;
+	}
+
+	.foot1{
+	display:block;
+	@include span-columns(4);
+	}
+.foot2{
+	display:block;
+	@include span-columns(4);
+	}
+
+	.foot3{
+	display:block;
+	@include span-columns(3);
+	}
+.foot4{
+	display:inline-block;
+	text-align:centre;
+	@include span-columns(12);
+	height:10px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+h6{
+	color:white;
+	
+	font-size:0.8em;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+.test{
+	@include span-columns(12);
+	height:100px;
+}
+.headline{
+display:block;
+	padding:100;
+}
+
+.centerize {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media all and (max-width: 500px) {
+  .flex-item1 {
+  clear:both;
+  }
+  }
+
+  @media all and (max-width: 500px) {
+  .flex-item {
+  clear:both;
+  }
+  }
+.flex-item2 {
+  background: yellow;
+  @include span-columns(4,12);
+  @include isolate(3);
+  width:50px;
+  height:50px;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 260px;
+  list-style:none;
+  margin-left: auto;
+    margin-right: auto;
+   
+    margin:20px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+.flex-item:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.clients{
+	@include span-columns(12);
+	text-align:centre;
+	display:block;
+	border:1px;
+}
