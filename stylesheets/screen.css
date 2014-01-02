@@ -83,9 +83,12 @@ body {
 /* line 32, ../sass/screen.scss */
 header {
   background-color: #34D1C6;
+}
+/* line 35, ../sass/screen.scss */
+header ul {
   margin: 0px;
 }
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 header .logo {
   display: inline-block;
   margin: 0 auto;
@@ -93,17 +96,18 @@ header .logo {
   padding: 0px;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .navigation {
+  margin: 0px;
   list-style: none;
   text-align: right;
   padding: 0 0 0 0;
 }
-/* line 47, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .navigation li {
   display: inline-block;
 }
-/* line 53, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .navigation a {
   text-decoration: none;
   padding: 2px;
@@ -111,32 +115,32 @@ header .logo {
   font-weight: bold;
   margin: 0px;
 }
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .navigation a:hover {
   color: yellow;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .highlight1 {
   background-color: #f2f2f2;
   height: 100px;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 h1 {
   color: #7E7774;
   text-align: center;
   font-size: 2.5em;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 h2 {
   color: cyan;
   text-align: center;
   font-size: 1em;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .flex-item {
   position: relative;
   background: yellow;
@@ -154,55 +158,55 @@ h2 {
   margin-right: auto;
   margin: 2px;
 }
-/* line 102, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .flex-item img {
   opacity: 1;
 }
-/* line 105, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .flex-item:hover {
   background: cyan;
 }
-/* line 108, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .flex-item img:hover {
   opacity: 0.8;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .view {
   display: block;
   text-align: centre;
   margin: 0 auto;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 h3 {
   color: cyan;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 h4 {
   color: white;
   text-align: left;
   font-size: 1.5em;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 p {
   color: white;
   text-align: left;
   font-size: 1.0em;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 h4 {
   color: white;
   text-align: centre;
   font-size: 1.5em;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .flex-item1 {
   position: relative;
   background: yellow;
@@ -222,7 +226,7 @@ h4 {
   margin: 2px;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .foot {
   background-color: cyan;
   height: 350px;
@@ -233,7 +237,7 @@ h4 {
   margin-top: 10px;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .foot1 {
   display: block;
   width: 32.53012%;
@@ -242,7 +246,7 @@ h4 {
   display: inline;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .foot2 {
   display: block;
   width: 32.53012%;
@@ -251,11 +255,11 @@ h4 {
   display: inline;
   list-style: none;
 }
-/* line 175, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .foot2 li {
   display: inline-block;
 }
-/* line 180, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .foot2 li a {
   list-style: none;
   text-decoration: none;
@@ -265,7 +269,7 @@ h4 {
   margin: 0px;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .foot3 {
   display: block;
   width: 24.09639%;
@@ -274,7 +278,7 @@ h4 {
   display: inline;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .foot4 {
   display: inline-block;
   text-align: centre;
@@ -287,19 +291,19 @@ h4 {
   margin-right: auto;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 h6 {
   color: white;
   font-size: 0.8em;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .test {
   width: 100%;
   float: left;
@@ -308,13 +312,13 @@ img {
   height: 100px;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .headline {
   display: block;
   padding: 100;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .centerize {
   display: block;
   margin: 0 auto;
@@ -322,18 +326,18 @@ img {
 }
 
 @media all and (max-width: 500px) {
-  /* line 230, ../sass/screen.scss */
+  /* line 233, ../sass/screen.scss */
   .flex-item1 {
     clear: both;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 236, ../sass/screen.scss */
+  /* line 239, ../sass/screen.scss */
   .flex-item {
     clear: both;
   }
 }
-/* line 240, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .flex-item2 {
   background: yellow;
   width: 32.53012%;
@@ -355,7 +359,7 @@ img {
   margin: 20px;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .imgDescription {
   position: absolute;
   top: 0;
@@ -371,13 +375,13 @@ img {
   */
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .flex-item:hover .imgDescription {
   visibility: visible;
   opacity: 1;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .clients {
   width: 100%;
   float: left;
@@ -388,10 +392,16 @@ img {
   border: 1px;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 button {
   color: #34D1C6;
   background-color: white;
   width: 150px;
   height: 40px;
+}
+
+/* line 298, ../sass/screen.scss */
+i {
+  border-radius: 80px 56px 80px;
+  background-color: blue;
 }

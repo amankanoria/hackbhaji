@@ -31,8 +31,9 @@ body{
 }
 header{
   background-color:#34D1C6;
-  margin:0px;
-
+  
+ul{margin:0px;}
+  
   .logo{
   display:inline-block;
   margin: 0 auto;
@@ -41,6 +42,8 @@ header{
   }
 }
 .navigation{
+	
+	margin:0px;
 	list-style:none;
 	text-align: right;
 	padding:0 0 0 0 ;
@@ -290,4 +293,9 @@ button{
 	background-color:white;
 	width:150px;
 	height:40px;
+}
+
+i{
+	border-radius:80px 56px 80px;
+	background-color:blue;
 }
